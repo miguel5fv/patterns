@@ -4,7 +4,7 @@
  *
  * About shapes
  */
-use Vendor\Factory as Factory;
+use Vendor\Factory;
 
 function spl_autoload($className)
 {
@@ -12,7 +12,7 @@ function spl_autoload($className)
 }
 spl_autoload_register();
 
-$shapeFactory   = new Factory\Shape();
+$shapeFactory   = new Shape();
 
 $circle = $shapeFactory->getShape('circle');
 $rectangle = $shapeFactory->getShape('rectangle');

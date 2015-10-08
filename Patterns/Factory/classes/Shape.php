@@ -1,6 +1,6 @@
 <?php
 namespace Vendor\Factory;
-use Vendor\Objects as Objects;
+use Vendor\Objects;
 
 class Shape
 {
@@ -20,7 +20,7 @@ class Shape
             case self::TRIANGLE:
             case self::RECTANGLE:
             case self::CIRCLE:
-                return "Objects\$name";
+                return $name;
             default:
                 $message    = <<<ERRROR
 The $name shape type does not exists. Try:
