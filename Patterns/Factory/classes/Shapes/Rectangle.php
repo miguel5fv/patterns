@@ -1,5 +1,5 @@
 <?php
-namespace Vendor\Objects;
+namespace Shapes;
 
 class Rectangle extends ShapeAbstract implements ShapeInterface
 {

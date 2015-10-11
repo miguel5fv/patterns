@@ -1,7 +1,7 @@
 <?php
-namespace Vendor\Objects;
+namespace Shapes;
 
-class Rectangle extends ShapeAbstract implements ShapeInterface
+class Triangle extends ShapeAbstract implements ShapeInterface
 {
     protected function correctSize($size)
     {

@@ -1,6 +1,7 @@
 <?php
-namespace Vendor\Factory;
-use Vendor\Objects;
+namespace Factory;
+
+use Shapes\Circle;
 
 class Shape
 {
@@ -20,7 +21,7 @@ class Shape
             case self::TRIANGLE:
             case self::RECTANGLE:
             case self::CIRCLE:
-                return $name;
+                return ucfirst($name);
             default:
                 $message    = <<<ERRROR
 The $name shape type does not exists. Try:
@@ -32,3 +33,4 @@ ERRROR;
         }
     }
 }
+

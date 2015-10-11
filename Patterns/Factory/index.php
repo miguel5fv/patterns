@@ -4,13 +4,9 @@
  *
  * About shapes
  */
-use Vendor\Factory;
+require_once 'vendor/autoload.php';
 
-function spl_autoload($className)
-{
-    require_once 'classes/' . strtolower($className) . '.php';
-}
-spl_autoload_register();
+use Factory\Shape;
 
 $shapeFactory   = new Shape();
 
