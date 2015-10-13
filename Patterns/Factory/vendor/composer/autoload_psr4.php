@@ -7,5 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Shapes\\' => array($baseDir . '/../src/Shapes'),
-    'Factory\\' => array($baseDir . '/classes/Factory'),
+    'Factory\\' => array($baseDir . '/classes'),
 );
