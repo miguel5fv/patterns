@@ -7,33 +7,32 @@ class Shape
 
     public function drawTriangle($size)
     {
-        $this->drawShape('triangle', $size);
+        return $this->drawShape('triangle', $size);
     }
 
     public function drawRectangle($size)
     {
-        $this->drawShape('rectangle', $size);
+        return $this->drawShape('rectangle', $size);
     }
 
     public function drawCircle($size)
     {
-        $this->drawShape('circle', $size);
+        return $this->drawShape('circle', $size);
     }
 
     protected function drawShape($type, $size)
     {
         if (empty($this->shapes[$type])) {
-            $this->createShape('triangle', $size);
+            $this->createShape($type, $size);
         }
 
-        $this->shapes[$type]->draw();
-
-        return $this;
+        return $this->shapes[$type]->draw();
     }
 
     protected function createShape($type, $size)
     {
-        $this->shapes[$type]    = new Factory\Shape()->getShape($type)->setSize($size);
+        $factoryShape    	= new \Factory\Shape();
+        $this->shapes[$type]    = $factoryShape->getShape($type)->setSize($size);
 
         return $this;
     }
