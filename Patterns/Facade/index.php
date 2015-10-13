@@ -24,7 +24,7 @@ try {
 }
 
 try {
-	$facadeShape->drawRectangle(2);
+	$facadeShape->drawTriangle(2);
 } catch (\LogicException $e) {
         echo 'No triangle draw because: ', $e->getMessage(), "\n";
 }

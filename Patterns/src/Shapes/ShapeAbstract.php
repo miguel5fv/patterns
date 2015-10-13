@@ -10,8 +10,8 @@ abstract class ShapeAbstract implements ShapeInterface
         if (0 < $this->size){
             return get_class($this);
         }
-
-        throw new \LogicException('Wrong size setted');
+        
+	throw new \LogicException('Wrong size setted');
     }
 
     public function setSize($size)
