@@ -1,8 +1,6 @@
 <?php
 namespace Factory;
 
-use Shapes\Circle;
-
 class Shape
 {
     CONST TRIANGLE      = 'triangle';
@@ -21,7 +19,7 @@ class Shape
             case self::TRIANGLE:
             case self::RECTANGLE:
             case self::CIRCLE:
-                return ucfirst($name);
+                return 'Shapes\\' . ucfirst($name);
             default:
                 $message    = <<<ERRROR
 The $name shape type does not exists. Try:

@@ -8,10 +8,10 @@ abstract class ShapeAbstract implements ShapeInterface
     public function draw()
     {
         if (0 < $this->size){
-            return __CLASS__;
+            return get_class($this);
         }
 
-        throw new \LogicException('No shape with 0 size can be drawn');
+        throw new \LogicException('Wrong size setted');
     }
 
     public function setSize($size)
@@ -22,6 +22,8 @@ abstract class ShapeAbstract implements ShapeInterface
         else {
             $this->size = 0;
         }
+	
+	return $this;
     }
 
     abstract protected function correctSize($size);
