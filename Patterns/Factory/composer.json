@@ -3,7 +3,7 @@
 	"autoload": {
 		"psr-4": {
 			"Factory\\": "classes/Factory",
-			"Shapes\\": "classes/Shapes"
+			"Shapes\\": "../src/Shapes"
 		}
 	}
 }
