@@ -6,7 +6,7 @@
  */
 require_once 'vendor/autoload.php';
 
-use Factory\Shape;
+use Patterns\Factory\Shape;
 
 $shapeFactory   = new Shape();
 

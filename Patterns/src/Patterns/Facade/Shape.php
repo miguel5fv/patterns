@@ -1,5 +1,5 @@
 <?php
-namespace Facade;
+namespace Patterns\Facade;
 
 class Shape
 {
@@ -32,7 +32,7 @@ class Shape
 
     protected function createShape($type)
     {
-        $factoryShape    	= new \Factory\Shape();
+        $factoryShape    	= new \Patterns\Factory\Shape();
         $this->shapes[$type]    = $factoryShape->getShape($type);
 
         return $this;

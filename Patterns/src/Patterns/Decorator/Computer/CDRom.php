@@ -1,5 +1,5 @@
 <?php
-namespace Decorator\Computer;
+namespace Patterns\Decorator\Computer;
 
 
 class CDRom extends Device

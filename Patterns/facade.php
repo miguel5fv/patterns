@@ -1,7 +1,7 @@
 <?php
 require_once 'vendor/autoload.php';
 
-use Facade\Shape;
+use Patterns\Facade\Shape;
 
 $facadeShape   = new Shape();
 

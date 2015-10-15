@@ -3,9 +3,7 @@
   "autoload": {
 	"psr-4": {
 	  "Computer\\": "src/Computer",
-	  "Decorator\\Computer\\": "src/Decorator/Computer",
-	  "Facade\\": "src/Facade",
-	  "Factory\\": "src/Factory",
+	  "Patterns\\": "src/Patterns",
 	  "Shapes\\": "src/Shapes"
 	}
   }

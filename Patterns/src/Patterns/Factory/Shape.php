@@ -1,5 +1,5 @@
 <?php
-namespace Factory;
+namespace Patterns\Factory;
 
 class Shape
 {
