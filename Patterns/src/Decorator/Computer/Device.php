@@ -15,6 +15,6 @@ abstract class Device implements IComputer
 
     public function showType()
     {
-        return $this->computer->showType() . 'With: ' . $this->type;
+        return $this->computer->showType() . ' with: ' . $this->type;
     }
 }
