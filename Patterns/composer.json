@@ -2,6 +2,8 @@
   "version": "1.0.0",
   "autoload": {
 	"psr-4": {
+	  "Computer\\": "src/Computer",
+	  "Decorator\\Computer\\": "src/Decorator/Computer",
 	  "Facade\\": "src/Facade",
 	  "Factory\\": "src/Factory",
 	  "Shapes\\": "src/Shapes"
