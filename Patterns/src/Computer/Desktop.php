@@ -3,7 +3,7 @@ namespace Computer;
 use \Patterns\Strategy\Os\Linux;
 
 
-class Desktop extends Computer
+class Desktop extends AbstractComputer
 {
     protected $type = 'desktop';
 

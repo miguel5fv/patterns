@@ -1,7 +1,7 @@
 <?php
 namespace Computer;
 
-interface IComputer
+interface ComputerInterface
 {
     public function showType();
 }

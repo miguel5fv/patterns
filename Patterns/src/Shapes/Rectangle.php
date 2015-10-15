@@ -1,7 +1,7 @@
 <?php
 namespace Shapes;
 
-class Rectangle extends ShapeAbstract implements ShapeInterface
+class Rectangle extends AbstractShape implements ShapeInterface
 {
     protected function correctSize($size)
     {

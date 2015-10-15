@@ -2,7 +2,7 @@
 namespace Patterns\Decorator\Computer;
 
 
-class Keyboard extends Device
+class Keyboard extends AbstractDevice
 {
     protected $type = 'Keyboard';
 }

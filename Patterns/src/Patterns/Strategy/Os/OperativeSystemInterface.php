@@ -9,7 +9,7 @@
 namespace Patterns\Strategy\Os;
 
 
-interface IOperativeSystem
+interface OperativeSystemInterface
 {
     public function run();
 }

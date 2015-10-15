@@ -1,7 +1,7 @@
 <?php
 namespace Shapes;
 
-class Triangle extends ShapeAbstract implements ShapeInterface
+class Triangle extends AbstractShape implements ShapeInterface
 {
     protected function correctSize($size)
     {

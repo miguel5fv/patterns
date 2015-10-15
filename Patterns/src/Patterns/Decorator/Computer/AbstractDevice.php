@@ -1,14 +1,14 @@
 <?php
 namespace Patterns\Decorator\Computer;
 
-use \Computer\IComputer;
+use \Computer\ComputerInterface;
 
-abstract class Device implements IComputer
+abstract class AbstractDevice implements ComputerInterface
 {
     protected $computer;
     protected $type;
 
-    public function __construct(IComputer $computer)
+    public function __construct(ComputerInterface $computer)
     {
         $this->computer = $computer;
     }

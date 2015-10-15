@@ -1,7 +1,7 @@
 <?php
 namespace Patterns\Strategy\Os;
 
-class Android implements IOperativeSystem
+class Android implements OperativeSystemInterface
 {
     public function run()
     {

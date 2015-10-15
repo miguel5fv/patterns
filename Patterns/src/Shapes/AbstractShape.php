@@ -1,7 +1,7 @@
 <?php
 namespace Shapes;
 
-abstract class ShapeAbstract implements ShapeInterface
+abstract class AbstractShape implements ShapeInterface
 {
     protected $size;
 

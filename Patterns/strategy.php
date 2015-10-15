@@ -3,7 +3,7 @@
  * Strategy pattern example
  *
  * Read more here:
- * 	- https://en.wikipedia.org/wiki/Strategy_pattern#Java
+ * 	- https://en.wikipedia.org/wiki/Strategy_pattern
  */
 require_once 'vendor/autoload.php';
 

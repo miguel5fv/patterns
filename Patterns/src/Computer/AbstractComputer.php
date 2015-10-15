@@ -1,8 +1,8 @@
 <?php
 namespace Computer;
-use \Patterns\Strategy\Os\IOperativeSystem;
+use \Patterns\Strategy\Os\OperativeSystemInterface;
 
-abstract class Computer implements IComputer
+abstract class AbstractComputer implements ComputerInterface
 {
     protected $type;
     protected $operative_system;
@@ -12,7 +12,7 @@ abstract class Computer implements IComputer
         return $this->type;
     }
 
-    public function setOperativeSystem(IOperativeSystem $os)
+    public function setOperativeSystem(OperativeSystemInterface $os)
     {
         $this->operative_system = $os;
     }

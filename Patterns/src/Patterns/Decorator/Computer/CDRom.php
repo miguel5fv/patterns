@@ -2,7 +2,7 @@
 namespace Patterns\Decorator\Computer;
 
 
-class CDRom extends Device
+class CDRom extends AbstractDevice
 {
     protected $type = 'CDRom';
 }

@@ -2,7 +2,7 @@
 namespace Computer;
 use \Patterns\Strategy\Os\Android;
 
-class Laptop extends Computer
+class Laptop extends AbstractComputer
 {
     protected $type = 'laptop';
 

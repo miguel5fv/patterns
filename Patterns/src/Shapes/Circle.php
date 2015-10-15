@@ -1,7 +1,7 @@
 <?php
 namespace Shapes;
 
-class Circle extends ShapeAbstract implements ShapeInterface
+class Circle extends AbstractShape implements ShapeInterface
 {
     protected function correctSize($size)
     {
