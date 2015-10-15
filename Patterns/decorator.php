@@ -1,8 +1,10 @@
 <?php
 /**
- * Factory pattern example
+ * Decorator pattern example
  *
- * About shapes
+ * Read more here:
+ * 	- https://en.wikipedia.org/wiki/Decorator_pattern
+ * 	- http://www.dreamincode.net/forums/topic/212936-the-decorator-design-pattern/
  */
 require_once 'vendor/autoload.php';
 

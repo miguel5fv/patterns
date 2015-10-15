@@ -2,7 +2,8 @@
 /**
  * Factory pattern example
  *
- * About shapes
+ * Read more here:
+ * 	- https://en.wikipedia.org/wiki/Factory_method_pattern
  */
 require_once 'vendor/autoload.php';
 

@@ -1,4 +1,10 @@
 <?php
+/**
+ * Facade pattern example
+ *
+ * Read more here:
+ * 	- https://en.wikipedia.org/wiki/Facade_pattern
+ */
 require_once 'vendor/autoload.php';
 
 use Patterns\Facade\Shape;
