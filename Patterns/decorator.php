@@ -8,7 +8,6 @@
  */
 require_once 'vendor/autoload.php';
 
-use Computer;
 use Patterns\Decorator\Computer as DecoratorComputer;
 
 $desktop	= new Computer\Desktop();

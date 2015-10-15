@@ -7,7 +7,6 @@
  */
 require_once 'vendor/autoload.php';
 
-use Computer;
 use Patterns\Strategy\Os as StrategyOs;
 
 $desktop	= new Computer\Desktop();
