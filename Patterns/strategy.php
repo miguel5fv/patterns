@@ -16,8 +16,8 @@ echo "Running default OS: \n",
 	"\t", $desktop->start(), "\n",
 	"\t", $laptop->start(), "\n";
 
-$desktop->setOperativeSystem(new StrategyOs\Windows());
-$laptop->setOperativeSystem(new StrategyOs\Linux());
+$desktop->installOperativeSystem(new StrategyOs\Windows());
+$laptop->installOperativeSystem(new StrategyOs\Linux());
 
 echo "Running changing the OS: \n",
 "\t", $desktop->start(), "\n",

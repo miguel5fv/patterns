@@ -1,9 +1,12 @@
 <?php
 namespace Computer;
 use \Patterns\Strategy\Os\OperativeSystemInterface;
+use \Patterns\Observer as ObserverPattern;
 
-abstract class AbstractComputer implements ComputerInterface
+abstract class AbstractComputer implements ComputerInterface, ObserverPattern\SubjectInterface
 {
+    use ObserverPattern\Subject;
+
     protected $type;
     protected $operative_system;
 
@@ -12,7 +15,7 @@ abstract class AbstractComputer implements ComputerInterface
         return $this->type;
     }
 
-    public function setOperativeSystem(OperativeSystemInterface $os)
+    public function installOperativeSystem(OperativeSystemInterface $os)
     {
         $this->operative_system = $os;
     }

@@ -2,9 +2,12 @@
 namespace Patterns\Decorator\Computer;
 
 use \Computer\ComputerInterface;
+use \Patterns\Observer as ObserverPattern;
 
-abstract class AbstractDevice implements ComputerInterface
+abstract class AbstractDevice implements ComputerInterface, ObserverPattern\ObserverInterface
 {
+    use ObserverPattern\ObserverInterface;
+
     protected $computer;
     protected $type;
 
