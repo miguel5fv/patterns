@@ -2,7 +2,6 @@
 /**
  * Needed to force any implementation to recognize it
  */
-
 namespace Patterns\Observer;
 
 interface SubjectInterface

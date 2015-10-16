@@ -22,17 +22,17 @@ class Shape
 
     protected function drawShape($type, $size)
     {
-        if (empty($this->shapes[$type])) {
+        if ( empty($this->shapes[$type])) {
             $this->createShape($type);
         }
 
-	$this->shapes[$type]->setSize($size);
+    $this->shapes[$type]->setSize($size);
         return $this->shapes[$type]->draw();
     }
 
     protected function createShape($type)
     {
-        $factoryShape    	= new \Patterns\Factory\Shape();
+        $factoryShape           = new \Patterns\Factory\Shape();
         $this->shapes[$type]    = $factoryShape->getShape($type);
 
         return $this;

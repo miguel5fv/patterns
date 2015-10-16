@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Miguel
- * Date: 16/10/2015
- * Time: 11:41
- */
-
 namespace Patterns\Observer;
 
 trait Observer
@@ -15,6 +8,7 @@ trait Observer
     public function update(SubjectInterface $subject)
     {
         $this->status   = $subject->getStatus();
+
         return $this;
     }
 

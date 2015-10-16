@@ -11,7 +11,7 @@ abstract class AbstractShape implements ShapeInterface
             return get_class($this);
         }
         
-	throw new \LogicException('Wrong size setted');
+        throw new \LogicException('Wrong size setted');
     }
 
     public function setSize($size)
@@ -22,8 +22,8 @@ abstract class AbstractShape implements ShapeInterface
         else {
             $this->size = 0;
         }
-	
-	return $this;
+    
+        return $this;
     }
 
     abstract protected function correctSize($size);

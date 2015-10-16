@@ -1,5 +1,6 @@
 <?php
 namespace Computer;
+
 use \Patterns\Strategy\Os\Android;
 
 class Laptop extends AbstractComputer

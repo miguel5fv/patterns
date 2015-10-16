@@ -1,9 +1,12 @@
 <?php
 namespace Computer;
+
 use \Patterns\Strategy\Os\OperativeSystemInterface;
 use \Patterns\Observer as ObserverPattern;
 
-abstract class AbstractComputer implements ComputerInterface, ObserverPattern\SubjectInterface
+abstract class AbstractComputer implements
+    ComputerInterface,
+    ObserverPattern\SubjectInterface
 {
     use ObserverPattern\Subject;
 

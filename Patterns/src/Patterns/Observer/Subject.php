@@ -36,7 +36,7 @@ trait Subject
     public function removeObserver(ObserverInterface $observer)
     {
         $observerType = get_class($observer);
-        if (!empty($this->setOfObservers[$observerType])) {
+        if (! empty($this->setOfObservers[$observerType])) {
             $observerIndex = array_search($observer, $this->setOfObservers[$observerType]);
 
             if (false !== $observerIndex) {
@@ -54,17 +54,17 @@ trait Subject
 
     public function setStatus($status)
     {
-        if (empty($this->setOfStatus[$status])) {
+        if ( empty($this->setOfStatus[$status])) {
             throw new \InvalidArgumentException('That status does not exists');
         }
 
         $this->status   = $status;
-	$this->notify();	
+        $this->notify();
 
         return $this;
     }
 
-    public function setSetOfStatus( array $setOfStatus)
+    public function setSetOfStatus(array $setOfStatus)
     {
         $this->setOfStatus  = $setOfStatus;
 

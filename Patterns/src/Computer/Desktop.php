@@ -1,7 +1,7 @@
 <?php
 namespace Computer;
-use \Patterns\Strategy\Os\Linux;
 
+use \Patterns\Strategy\Os\Linux;
 
 class Desktop extends AbstractComputer
 {

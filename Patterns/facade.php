@@ -3,7 +3,7 @@
  * Facade pattern example
  *
  * Read more here:
- * 	- https://en.wikipedia.org/wiki/Facade_pattern
+ *     - https://en.wikipedia.org/wiki/Facade_pattern
  */
 require_once 'vendor/autoload.php';
 
@@ -11,26 +11,26 @@ use Patterns\Facade\Shape;
 
 $facadeShape   = new Shape();
 
-$circle 	= $facadeShape->drawCircle(1);
-$rectangle 	= $facadeShape->drawRectangle(2);
-$triangle 	= $facadeShape->drawTriangle(3);
+$circle     = $facadeShape->drawCircle(1);
+$rectangle  = $facadeShape->drawRectangle(2);
+$triangle   = $facadeShape->drawTriangle(3);
 
 echo 'Drawn: ', $rectangle, ' - ',  $circle, ' - ',$triangle, "\n";
 
 try {
-	$facadeShape->drawCircle(-1);
+    $facadeShape->drawCircle(-1);
 } catch (\LogicException $e) {
-	echo 'No circle draw because: ', $e->getMessage(), "\n";
+    echo 'No circle draw because: ', $e->getMessage(), "\n";
 }
 
 try {
-	$facadeShape->drawRectangle(3);
+    $facadeShape->drawRectangle(3);
 } catch (\LogicException $e) {
-        echo 'No rectangle draw because: ', $e->getMessage(), "\n";
+    echo 'No rectangle draw because: ', $e->getMessage(), "\n";
 }
 
 try {
-	$facadeShape->drawTriangle(2);
+    $facadeShape->drawTriangle(2);
 } catch (\LogicException $e) {
-        echo 'No triangle draw because: ', $e->getMessage(), "\n";
+    echo 'No triangle draw because: ', $e->getMessage(), "\n";
 }
