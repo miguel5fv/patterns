@@ -8,7 +8,6 @@
 
 namespace Patterns\Observer;
 
-
 trait Observer
 {
     protected $status   = null;

@@ -6,6 +6,8 @@
  * Time: 11:35
  */
 
+namespace Patterns\Observer;
+
 interface ObserverInterface
 {
     public function update(SubjectInterface $subject);

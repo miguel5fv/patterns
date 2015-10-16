@@ -7,7 +7,6 @@
 
 namespace Patterns\Observer;
 
-
 trait Subject
 {
     protected $status           = 'stopped';
@@ -27,14 +26,14 @@ trait Subject
         }
     }
 
-    public function addObserver(Observer $observer)
+    public function addObserver(ObserverInterface $observer)
     {
         $this->setOfObservers[get_class($observer)][] = $observer;
 
         return $this;
     }
 
-    public function removeObserver(Observer $observer)
+    public function removeObserver(ObserverInterface $observer)
     {
         $observerType = get_class($observer);
         if (!empty($this->setOfObservers[$observerType])) {
@@ -60,6 +59,7 @@ trait Subject
         }
 
         $this->status   = $status;
+	$this->notify();	
 
         return $this;
     }

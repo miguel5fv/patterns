@@ -25,17 +25,23 @@ $computer['laptop'] 	= new Computer\Laptop();
 
 printElementsStatus('Computers', $computer);
 
-$components['desktop with CDrom']	= new DecoratorComputer\CDRom($desktop);
-$components['desktop with Monitor']	= new DecoratorComputer\Monitor($desktop);
-$components['Laptop with Mouse']	= new DecoratorComputer\Mouse($laptop);
+$components['desktop with CDrom']	= new DecoratorComputer\CDRom($computer['desktop']);
+$components['desktop with Monitor']	= new DecoratorComputer\Monitor($computer['desktop']);
+$components['Laptop with Mouse']	= new DecoratorComputer\Mouse($computer['laptop']);
+
+$computer['desktop']->addObserver($components['desktop with CDrom']);
+$computer['desktop']->addObserver($components['desktop with Monitor']);
+$computer['laptop']->addObserver($components['Laptop with Mouse']);
 
 printElementsStatus('Components', $components);
 
+echo "\n --- Set desktop to running --- \n";
 $computer['desktop']->setStatus('running');
 
 printElementsStatus('Computers', $computer);
 printElementsStatus('Components', $components);
 
-$computer['laptop']->setStatus('started');
+echo "\n --- Set laptop to starting --- \n";
+$computer['laptop']->setStatus('starting');
 printElementsStatus('Computers', $computer);
 printElementsStatus('Components', $components);

@@ -6,7 +6,7 @@ use \Patterns\Observer as ObserverPattern;
 
 abstract class AbstractDevice implements ComputerInterface, ObserverPattern\ObserverInterface
 {
-    use ObserverPattern\ObserverInterface;
+    use ObserverPattern\Observer;
 
     protected $computer;
     protected $type;
